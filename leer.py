@@ -1,7 +1,6 @@
-import acumulador
-def leer_usuario(dato1:list,
-                     dato2:list,
-)->list:
+def leer_usuario(
+    diccionario:dict
+)->dict:
     """VISUALIZAR DATOS
 
     Args:
@@ -9,8 +8,11 @@ def leer_usuario(dato1:list,
         dato2 (list): nombre del libro
 
     Returns:
-        print:acumulador
+        lee usuario
     """
-    print(acumulador)
+    for i,j in diccionario.items():
+        print ('[',i, ' => ', j,']')
+        
+    
     
         

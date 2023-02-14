@@ -1,24 +1,30 @@
-import acumulador
-def actualizar_usuario(dato1:list,
-                     dato2:list,
-)->list:
+def actualizar_usuario(
+    dicc:dict
+    
+):
     """ACTUALIZAR DATO DEL DICCIONARIO
 
     Args:
-        dato1 (list): nombre del usuario
-        dato2 (list): nombre del libro
+        dicc (dict) : lugar donde se almacena la informacion
+        antius(str): usuario antiguo
+        newus(str): usuario nuevo
+        libro(str): nuevo libro 
 
     Returns:
-        list: _description_
+        actualiza usuario
     """
-    print(acumulador)
-    nom=input("ingrese nombre del usuario antiguo: ")
-    tomo=input("ingrese nombre del libro antiguo : ")
-    nomn=input("ingrese el nuevo usuario: ")
-    tomon=input("ingrese el nuevo libro: ")
-    dato1.remove(nom)
-    dato2.remove(tomo)
-    dato1.append(nomn)
-    dato2.append(tomon)
+    
+    antius=str(input("ingrese nombre del usuario antiguo: "))
+    newus=str(input("ingrese el nuevo usuario: "))
+    libro=str(input("ingrese el nuevo libro: "))
+    dicc[newus]= libro
+    dicc.pop(antius)
     return
+    
+    
+    
+    
+    
+    
+   
         

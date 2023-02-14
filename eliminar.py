@@ -1,19 +1,17 @@
-import acumulador
-def eliminar_usuario(dato1:list,
-                     dato2:list,
-)->list:
+def eliminar_usuario(
+    dicc:dict
+)->dict:
     """ELIMINAR DATO DEL DICCIONARIO
 
     Args:
-        dato1 (list): nombre del usuario
-        dato2 (list): nombre del libro
+        dicc (dict): lugar donde se almacena los datos
+        nom (str): el nombre que va a ser eliminado
 
     Returns:
-        
+        elimina usuario
     """
-    print(acumulador)
+    
     nom=input("ingrese nombre del usuario a eliminar: ")
-    tomo=input("ingrese nombre del libro a eliminar : ")
-    dato1.pop(nom)
-    dato2.pop(tomo)
+    dicc.pop(nom)
+    
     return
